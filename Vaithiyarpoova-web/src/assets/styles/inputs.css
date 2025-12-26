@@ -1,0 +1,428 @@
+/* Inputs Page Styles */
+.body-div-el-in {
+  height: calc(100% - 15px);
+  padding: 10px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.inputs-container {
+  padding: 20px 20px;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+/* Section Styling */
+.input-section {
+  margin-bottom: 32px;
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+
+.add-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(3deg, #0B622F, #18934B) !important;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5px -2px #011007;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+}
+
+.add-icon {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Items Container */
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  min-height: 60px;
+}
+
+/* Item Button */
+.item-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 25px;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  min-width: 120px;
+}
+
+.item-button:hover {
+  background: #f8f9fa;
+  border-color: #dee2e6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-text {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+}
+
+/* Remove Button */
+.remove-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #dc3545;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 1;
+}
+
+.remove-button:hover {
+  background: #c82333;
+  transform: scale(1.1);
+}
+
+.remove-icon {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* No Items State */
+.no-items {
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.header-divpart-el {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.header-titlecount-el {
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.nav-btn-top {
+  background: none;
+  border: none;
+  color: #6c757d;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-btn-top:hover {
+  color: #333;
+}
+
+/* Modal Styling - Specific to Inputs Page */
+.inputs-page .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.inputs-page .modal-container {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.inputs-page .modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.inputs-page .modal-close:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.inputs-page .form-group {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.inputs-page .form-group label {
+  display: block;
+  font-weight: 500;
+  color: #6c757d;
+  font-size: 14px;
+  min-width: 80px;
+  margin: 0;
+}
+
+.inputs-page .form-control {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.inputs-page .form-control:focus {
+  outline: none;
+  border-color: #0B622F;
+  box-shadow: 0 0 0 2px rgba(11, 98, 47, 0.1);
+}
+
+.cancel-btn-st:hover {
+  color: #121212;
+}
+
+.add-button-inputst {
+  padding: 4px 18px !important;
+  height: fit-content !important;
+  width: fit-content !important;
+  border-radius: 5px !important;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #0B622F;
+  color: white;
+  border-color: #0B622F;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #0A5A2A;
+  border-color: #0A5A2A;
+}
+
+.btn-secondary {
+  background: white;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #c82333;
+}
+
+/* Affected Products */
+.affected-products {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+}
+
+.text-warning {
+  color: #856404;
+  margin-bottom: 12px;
+}
+
+.products-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.product-item {
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.more-products {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inputs-container {
+    padding: 16px;
+  }
+
+  .input-section {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .items-container {
+    gap: 8px;
+  }
+
+  .item-button {
+    padding: 6px 12px;
+  }
+
+  .modal-container {
+    width: 95%;
+    margin: 20px;
+  }
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* Error State */
+.alert {
+  border-radius: 8px;
+  border: none;
+  padding: 16px 20px;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  color: #721c24;
+  border-left: 4px solid #dc3545;
+}
+
+.item-ipbtn-st {
+  height: fit-content !important;
+  width: fit-content !important;
+  border-radius: 152px !important;
+  box-shadow: 0px 2px 3px -2px #003114 !important;
+}
+
+.cancel-btn-in{
+  padding: 5px 10px ;
+  background-color: #ffffff;
+  outline: none;
+  color: #121212;
+  border: 1px solid #3d3939  ;
+  border-radius: 5px;
+  width: 100px;
+}
+.save-btn-in{
+  padding: 5px 10px ;
+  background-color: #0A5A2A;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #0A5A2A  ;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.delete-btn-in{
+  padding: 5px 10px ;
+  background-color: #be242c;
+  outline: none;
+  border: 1px solid #be242c;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100px;
+}
+.cancel-btn-in:hover{
+  padding: 5px 10px ;
+  background-color: #3d3939b0;
+  color: #ffffff;
+  border: 1px solid #3d3939  ;
+  width: 100px;
+}

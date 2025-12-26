@@ -1,0 +1,83 @@
+.header-div-tr {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.body-div-tr {
+    height: calc(100% - 65px);
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.tracking-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .tracking-modal-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .tracking-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tracking-modal-header h5 {
+    margin: 0;
+  }
+  
+  .tracking-modal-header button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .tracking-modal-body h6 {
+    margin-top: 32px;
+    font-weight: 600;
+    border-bottom: 1px solid #016d0e12;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .tracking-modal-body p {
+    margin: 2px 0;
+  }
+
+  .tracking-modal-body p {
+    margin-bottom: 12px;
+  }
+  
+  .tracking-modal-body p {
+    font-weight: 400;
+  }
+  @media (max-width: 568px) {
+   .body-div-tr {
+    padding: 0px !important;  
+}
+
+.body-div-ac {
+    height: calc(100% - 72px);
+    padding: 0px !important;
+}
+}

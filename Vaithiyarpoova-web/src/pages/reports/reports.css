@@ -1,0 +1,127 @@
+/* Reports Page Styles */
+
+/* Report Type Selection */
+.report-type-selection {
+  padding: 20px 0;
+}
+
+.report-type-selection .form-check {
+  margin-bottom: 0;
+}
+
+.report-type-selection .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.report-type-selection .form-check-input[type="radio"]:checked {
+  background-color: #0B622F;
+  border-color: #0B622F;
+}
+
+.report-type-selection .form-check-input[type="checkbox"]:checked {
+  background-color: #0B622F;
+  border-color: #0B622F;
+}
+
+.report-type-selection .form-check-label {
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Date Inputs in Header */
+.date-input-wrapper {
+  min-width: 80px;
+}
+
+.date-input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 8px;
+  z-index: 2;
+  color: #6c757d;
+}
+
+.date-input-field .search-input-up {
+  border: 1px solid #0B622F;
+  border-radius: 6px;
+  padding: 5px 8px 5px 30px;
+  font-size: 14px;
+  background: white;
+  text-align: center;
+  color: #333;
+  min-width: 60px;
+}
+
+.date-input-field .search-input-up:focus {
+  outline: none;
+  border-color: #18934B;
+  box-shadow: 0 0 0 2px rgba(11, 98, 47, 0.1);
+}
+
+/* Reports Table */
+.reports-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  height: calc(100% - 98px);
+}
+
+/* Table styling using existing classes */
+.table-userpro-up {
+  width: 100%;
+}
+
+.table-head-up {
+  background-color: #0B622F;
+  color: white;
+  font-weight: 600;
+}
+
+.table-head-up > div:last-child {
+  border-right: none;
+}
+
+
+.table-bodydiv-up {
+  transition: background-color 0.2s;
+}
+
+.table-bodydiv-up:hover {
+  background-color: #f1f3f4;
+}
+
+.table-bodydiv-up > div:last-child {
+  border-right: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .common-body-st {
+    padding: 15px;
+  }
+  
+  .report-type-selection {
+    padding: 15px 0;
+  }
+  
+  .reports-table-container {
+    padding: 15px;
+  }
+  
+  .date-input-wrapper {
+    min-width: 60px;
+  }
+}
+
+.search-add-wrapper-st {
+  margin-left: auto;
+}

@@ -1,0 +1,348 @@
+.order-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.order-modal-container {
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.order-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+}
+
+.order-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.order-modal-section h4 {
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+.order-modal-section p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.order-modal-receipt {
+    max-width: 250px;
+    max-height: 218px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    width: auto;
+    display: block;
+}
+
+.order-modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.order-btn-decline,
+.order-btn-approve {
+    padding: 8px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer !important;
+    transition: 0.3s ease;
+}
+
+.order-btn-decline {
+    background-color: #f44336;
+    color: white;
+}
+
+.order-btn-approve {
+    background: linear-gradient(3deg, #0B622F, #18934b) !important;
+    color: white;
+}
+
+.order-btn-decline:hover {
+    background-color: #d32f2f;
+}
+
+.order-btn-approve:hover {
+    background-color: #388e3c;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.icon-button img {
+    width: 28px;
+}
+
+.dropdown-button-up {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.header-div-order {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+
+/* Base button styles for Orders page */
+.btn-top-up {
+    border: 1px solid #05823a;
+    padding: 7px 22px;
+    border-radius: 6px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-color: transparent;
+    color: #05823a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-top-up:hover {
+    background: linear-gradient(3deg, #0B622F, #18934B);
+    color: white;
+    border-color: #18934B;
+}
+
+.btn-top-up:hover svg path {
+    fill: white;
+}
+
+.btn-top-up:hover svg {
+    fill: white;
+}
+
+/* Button active state styles for Orders page - High specificity */
+button.btn-top-up.active,
+.btn-top-up.active,
+div button.btn-top-up.active {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+    border-color: #18934B !important;
+    box-shadow: 0 2px 8px rgba(11, 98, 47, 0.3) !important;
+}
+
+button.btn-top-up.active svg path,
+.btn-top-up.active svg path,
+div button.btn-top-up.active svg path {
+    fill: white !important;
+}
+
+button.btn-top-up.active svg,
+.btn-top-up.active svg,
+div button.btn-top-up.active svg {
+    fill: white !important;
+}
+
+/* Ensure active state takes precedence over hover */
+button.btn-top-up.active:hover,
+.btn-top-up.active:hover,
+div button.btn-top-up.active:hover {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+    border-color: #18934B !important;
+}
+
+/* Override any conflicting styles from user-profile.css */
+button.btn-top-up.active.btn-bg-filled,
+.btn-top-up.active.btn-bg-filled {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+    border-color: #18934B !important;
+}
+
+button.btn-top-up.active.btn-bg-filled svg,
+.btn-top-up.active.btn-bg-filled svg {
+    fill: white !important;
+}
+
+.filter-close-st {
+    position: absolute;
+    top: -27px;
+    right: 95px;
+    font-size: 38px;
+    color: #b20b0b;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.times-st {
+    position: absolute;
+    top: -8px;
+    font-size: 28px;
+    background: red;
+    border-radius: 50%;
+    padding: 2px;
+    width: 22px;
+    display: flex;
+    height: 22px;
+    margin-bottom: 0px;
+    left: -8px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hide default checkbox */
+.order_form-checkbox-wrapper input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* label wrapper */
+  .order_form-checkbox-wrapper .order_form-checkbox-label {
+    position: relative;
+    padding-left: 28px; /* space for custom box */
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    user-select: none;
+  }
+  
+  /* custom square box */
+  .order_form-checkbox-wrapper .order_form-checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #555;
+    border-radius: 4px; /* change to 50% for circle style */
+    background: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  /* checked state */
+  .order_form-checkbox-wrapper input[type="checkbox"]:checked + .order_form-checkbox-label::before {
+    border-color: #0B622F;
+  }
+  
+  /* tick mark */
+  .order_form-checkbox-wrapper .order_form-checkbox-label::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 8px;
+    top: -5px;
+    width: 8px;
+    border-radius: 1px;
+    height: 18px;
+    border: 1px solid #0b622f;
+    border-width: 0 3px 3px 0;
+    z-index: 99;
+    transform: rotate(45deg);
+  }
+  
+  /* show tick when checked */
+  .order_form-checkbox-wrapper input[type="checkbox"]:checked + .order_form-checkbox-label::after {
+    display: block;
+  }
+  
+  .color-fade {
+    color: #c9c9c9 !important;
+  }
+
+  .setmin-wdst-dir {
+    min-width: 198px !important;
+  }
+
+  .menu-branch-dir {
+    position: absolute;
+    top: 92px;
+    right: 48px;
+    z-index: 99;
+  }
+
+  .form-control-static {
+    margin-bottom: 0px;
+  }
+
+
+.order-modal-container-or {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 100%;
+    max-height: 90%;
+}
+.order-modal-container-or-head{
+   height: 50px;
+   padding: 2px 25px 2px  25px;
+   display:  flex;
+   align-items: center;
+   justify-content: end;
+   cursor: pointer !important;
+}
+.order-modal-container-or-body{
+    height: calc(100% -  120px);
+    padding:5px 25px 2px  25px;
+    overflow: auto;
+}
+.order-footer-or{
+    height: 70px;
+    padding: 15px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .response-mob-order {
+        width: 100% !important;    
+       margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,344 @@
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.2s, color 0.2s;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+}
+
+.calendar-day:hover {
+    background-color: #0b622f2d;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.year-dropdown,
+.month-dropdown {
+    z-index: 1000;
+}
+
+.calc-header-st {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    padding: 15px !important;
+    color: white;
+}
+
+.text-primary-st {
+    color: #0B622F;
+}
+
+.main-calc-st {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height:  calc(100% - 40px);
+}
+
+.btn-primary-vp {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white;
+    padding: 6px 32px;
+    border-radius: 6px;
+}
+
+.btn-events:hover {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: #fff !important;
+}
+
+.danger-hover:hover {
+    color: rgb(239, 40, 40) !important;
+    font-weight: 600;
+}
+
+.calc-select-ba {
+    width: 50%;
+}
+
+.time-ranges-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.time-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.label {
+    width: 120px;
+    font-weight: 500;
+    color: #333;
+}
+
+.time-inputs {
+    display: flex;
+    gap: 16px;
+}
+
+.react-time-picker {
+    width: 100px;
+}
+
+.react-time-picker__wrapper {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.calendar-bgst {
+    box-shadow: 0px 6px 8px -5px #01321530;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid #1789452b;
+    padding-bottom: 28px;
+}
+
+.note-border-st {
+    background: #f69d0d17;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f69d0d75;
+}
+
+
+/* Wrapper (fixed container) */
+.calendar-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Hook (fixed point) */
+.calendar-hook {
+    width: 20px;
+    height: 20px;
+    background: #444141;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 2px 0px rgb(0 0 0);
+    z-index: 10;
+}
+
+/* Swinging group (thread + calendar together) */
+.swing-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: swing 2.5s ease-in-out infinite;
+    transform-origin: top center;
+    /* Pivot at the hook point */
+}
+
+/* Thread (sticks to hook and moves with swing) */
+.calendar-thread {
+    width: 3px;
+    height: 55px;
+    background: #131313;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Calendar box */
+.calendar-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 100%;
+    /* adjust as needed */
+    border: 1px solid #ddd;
+    margin-top: 0;
+}
+
+.innerhook-st {
+    top: 62px !important;
+    width: 15px !important;
+    height: 15px !important;
+    box-shadow: inset 0px 2px 4px rgb(0 0 0) !important;
+    background: white !important;
+}
+
+.hookpin-st {
+    height: 11px;
+    background: #000000;
+    width: 2px;
+    position: absolute;
+    top: -8px;
+    left: 4px;
+}
+
+.hookpin-st-rgt {
+    height: 11px;
+    background: #000000;
+    width: 2px;
+    position: absolute;
+    top: -8px;
+    left: 9px;
+}
+
+/* Swing animation */
+@keyframes swing {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+.image-hook {
+    background: transparent !important;
+    width: 75px !important;
+    height: 48px !important;
+    box-shadow: none !important;
+    top: -18px !important;
+    z-index: 0 !important;
+}
+
+.bg-col-st {
+    background: #f0f5f2;
+    padding: 18px !important;
+}
+
+.dot-selectev-st {
+    width: 10px;
+    height: 10px;
+    background: #0d6e35;
+    box-shadow: 0px 2px 2px -1px #464646;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    position: absolute;
+}
+
+.bg-active-ev {
+    --bs-bg-opacity: 1;
+    background: linear-gradient(rgb(5 122 54 / 17%), #12763b57) !important;
+    border: 0.5px solid #0e7439 !important;
+    cursor: pointer !important;
+}
+
+.bg-primary-vp {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.schedule-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule-label {
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.schedule-times {
+    display: flex;
+    gap: 12px;
+}
+
+.time-box {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 8px 36px 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Digital-7 Mono", monospace;
+    /* You can use a digital clock font */
+    font-size: 16px;
+    background: #f9f9f9;
+    min-width: 90px;
+}
+
+.time-box:hover {
+    background: #f1f1f1;
+}
+
+.clock-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.cal-modal-overlay {
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.cal-model-container {
+    background: white;
+    border-radius: 12px;
+    width: 500px;
+    height: 100%;
+    max-height: 90%;
+    animation: zoomIn 0.5s forwards;
+    transform-origin: center;
+    overflow: visible;
+}
+.modal-header-cal{
+    height: 60px;
+    padding: 20px;
+}
+.modal-body-cal{
+    padding: 2px 20px 20px 20px;
+    overflow: auto;
+    height: calc(100% - 125px);
+}
+.modal-footer-cal{
+    height: 65px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+.evente-header{
+    height: 60px;
+    padding: 20px;
+}
+.evente-body{
+    height: calc(100% - 130px);
+    padding: 20px;
+    overflow: auto;
+}
+.evente-footer{
+    height: 70px;
+    padding: 16px;
+}

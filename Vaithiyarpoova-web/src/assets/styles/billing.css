@@ -1,0 +1,97 @@
+.billform_form-container {
+    display: flex;
+    gap: 2rem;
+    background-color: #f9fafb00;
+    border-radius: 12px;
+    overflow: auto;
+}
+
+.billform_client-details,
+.billform_payment-receipt {
+    flex: 1;
+    min-width: 520px;
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.billform_client-details h3,
+.billform_payment-receipt h3 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.billform_form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 12px;
+}
+
+.billform_form-group label {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #333;
+}
+
+.billform_form-group input,
+.billform_form-group select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.billform_bold {
+    font-weight: 600;
+    color: #000;
+}
+
+.billform_hint {
+    color: gray;
+}
+
+.billform_checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.billform_checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.billform_button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.billform_btn-clear,
+.billform_btn-save,
+.billform_btn-save-print {
+    padding: 7px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.billform_btn-clear {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.billform_btn-save,
+.billform_btn-save-print {
+    background: linear-gradient(3deg, #0B622F, #18934b);
+    color: white;
+}
+
+.minwd-set-st {
+    min-width: 218px;
+}

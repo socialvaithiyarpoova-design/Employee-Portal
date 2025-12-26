@@ -1,0 +1,232 @@
+.reg-container {
+  width: 300px;
+  padding: 18px;
+  background: white;
+  border-radius: 8px;
+  height: 100%;
+  overflow: auto;
+}
+
+.regres-container {
+  width: 550px;
+  background: white;
+  border-radius: 8px;
+  height: 100%;
+  overflow: auto;
+}
+
+.reg-heading {
+  font-weight: 600;
+  height: 42px;
+  margin: 0px;
+}
+
+.reg-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.reg-form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.reg-input,
+.reg-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+}
+
+.reg-input:disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+}
+
+.reg-readonly-green {
+  color: #0a773c;
+  font-weight: 600;
+}
+
+.reg-actions {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  padding: 4px 0px;
+}
+
+.reg-cancel-btn,
+.reg-next-btn {
+  padding: 5px 28px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reg-cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.reg-next-btn {
+  background: linear-gradient(3deg, #0B622F, #18934b) !important;
+  color: white;
+}
+
+.reg-date-st {
+  height: 42px;
+  border: 1px solid #cccccc;
+}
+
+.preffered-date-st {
+  height: 38px;
+  border: 1px solid #cccccc;
+}
+
+.body-reg-lft {
+  height: calc(100% - 84px);
+  overflow: auto;
+}
+
+.reg-container-rgt {
+  width: calc(100% - 300px);
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.regres-container-rgt {
+  width: calc(100% - 420px);
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.reg-subcontainer-rgt {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  min-width: 762px;
+}
+
+.regres-subcontainer-rgt {
+  height: calc(100% - 55px);
+  width: 100%;
+  display: flex;
+  gap: 0;
+  min-width: 610px;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.partner-form-container h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.partner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reg-input {
+  width: 100%;
+}
+
+.label-controll-st {
+  min-width: 142px;
+}
+
+.foot-regclass-st {
+  height: 42px;
+  display: flex;
+  padding: 5px;
+  gap: 12px;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
+  min-width: 762px;
+}
+
+.footres-regclass-st {
+  height: 42px;
+  display: flex;
+  padding: 5px;
+  gap: 12px;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
+  min-width: 610px;
+}
+
+.disabled-section {
+  pointer-events: none;
+  opacity: 0.5;
+  position: relative;
+}
+
+.next-locationrgt-st {
+  width: 300px;
+  padding: 18px;
+  background: white;
+  border-radius: 8px;
+  height: 100%;
+  overflow: auto;
+}
+
+.next-locationlft-st {
+  width: calc(100% - 300px);
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.regres-actions {
+  display: flex;
+  justify-content: end;
+  height: 42px;
+  padding: 4px 0px;
+  gap: 12px
+}
+
+.general-data-st {
+  height: 42px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.subcenter-input-st {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.classtype-st {
+  width: calc(50% - 6px);
+}
+.custom-time-select option:not(:checked):hover {
+  background-color: #1E8449 !important;
+  color: white !important;
+}
+
+
+
+.custom-time-select option:checked {
+  background-color: #1E8449 !important; /* Green when selected */
+  color: #fff;
+}
+option:hover {
+  background-color: green !important;
+}

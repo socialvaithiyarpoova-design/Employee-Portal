@@ -1,0 +1,350 @@
+.status-toggle-up {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0px 12px 0px 0px;
+}
+
+.btn-top-up {
+    border: 1px solid #05823a;
+    padding: 7px 22px;
+    border-radius: 6px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-color: white;
+    color: #05823a;
+}
+
+.search-input-up {
+    padding: 7px 12px;
+    border: 1px solid #06823a;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    color: #121212;
+}
+
+.visible-label-up {
+    display: block;
+}
+
+.table-head-up {
+    width: 100%;
+    height: 48px;
+    box-shadow: 0px 1px 3px -1px #001900;
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    border-radius: 8px 8px 0px 0px;
+    color: white;
+    font-weight: 500;
+    min-width: 1024px;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-body-up {
+    width: 100%;
+    height: calc(100% - 48px);
+    min-width: 1024px;
+    flex-direction: column;
+    overflow: auto;
+    background-color: white;
+}
+
+.table-bodydiv-up {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    min-height: 48px;
+}
+
+.date-filter-popup {
+    position: absolute;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgb(0 139 56 / 36%);
+    z-index: 99;
+    top: 36px;
+    left: 202px;
+    max-width: 198px;
+}
+
+.search-add-wrapper {
+    position: relative;
+}
+
+.apply-filter-st {
+    background: radial-gradient(#18934B, #0B622F) !important;
+    border: 1px solid #18934B;
+    padding: 6px 22px;
+}
+
+.apply-filter-st:hover {
+    background: linear-gradient(#18934B, #0B622F) !important;
+    border: 1px solid #18934B !important;
+}
+
+.form-btncontrol-up {
+    border: 1px solid #18934B !important;
+}
+
+@media (max-width: 895px) {
+    .visible-label-up {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .common-body-st {
+        height: calc(100% - 78px) !important;
+    }
+}
+
+
+
+/* ------- UPLOAD ------- */
+
+.upload-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.upload-modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.upload-drop-area {
+    border: 2px dashed #4CAF50;
+    border-radius: 12px;
+    padding: 30px 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #4CAF50;
+    transition: background 0.2s ease;
+}
+
+.upload-drop-area:hover {
+    background: #f8fff8;
+}
+
+.file-preview {
+    width: 100%;
+    color: #333;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-name {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.delete-file-btn {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+}
+
+.btn-top-up:hover {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.btn-top-up:hover svg path {
+    fill: white !important;
+}
+
+.btn-top-up.active {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.btn-top-up.active svg path {
+    fill: white !important;
+}
+
+/* Ensure btn-bg-filled takes precedence over btn-top-up */
+.btn-top-up.btn-bg-filled {
+    background: #f0f5f2 !important;
+    color: #05823a !important;
+}
+
+/* Ensure filter button SVG shows in green */
+.btn-top-up.btn-bg-filled svg {
+    fill: #05823a !important;
+}
+
+/* Hover state for filter button */
+.btn-top-up.btn-bg-filled:hover {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.btn-top-up.btn-bg-filled:hover svg {
+    fill: white !important;
+}
+
+/* Active state for filter button (when dropdown is open) */
+.btn-top-up.btn-bg-filled.active {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.btn-top-up.btn-bg-filled.active svg {
+    fill: white !important;
+}
+
+/* Make inventory page buttons transparent by default with green text/icons */
+.product-filter-btns {
+    background: transparent !important;
+    color: #05823a !important;
+}
+
+.product-filter-btns img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(86deg) brightness(94%) contrast(86%) !important;
+}
+
+.inventory-export-btn {
+    background: transparent !important;
+    color: #05823a !important;
+}
+
+/* Ensure buttons only show green on hover and active states */
+.product-filter-btns:hover,
+.product-filter-btns.active {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.product-filter-btns:hover img,
+.product-filter-btns.active img {
+    filter: brightness(0) saturate(100%) invert(100%) !important;
+}
+
+.inventory-export-btn:hover,
+.inventory-export-btn.active {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.comm-select-shuf {
+    width: calc(100% - 162px);
+}
+
+.multi-select-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.option {
+    padding: 8px 12px;
+    margin: 4px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.option:hover {
+    background-color: #e6e6e6;
+}
+
+.option.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.MuiFormControl-root {
+    margin: 0px !important;
+    width: 100% !important;
+    z-index: 0 !important;
+}
+
+.MuiOutlinedInput-input {
+    padding: 8px !important;
+}
+
+.MuiInputLabel-root {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: unset !important;
+    top: -7px !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+    color: #0B622F !important;
+    outline: none !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #0B622F !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #0B622F !important;
+}
+
+.can-shuffle-st {
+    padding: 4px 22px;
+    border: 1px solid #05823a;
+    border-radius: 6px;
+}
+
+.bgsave-shuffle-st {
+    background: linear-gradient(3deg, #0B622F, #18934B) !important;
+    color: white !important;
+}
+
+.filter-clear-st {
+    position: absolute;
+    right: -8px;
+    top: -25px;
+    font-size: 35px;
+    color: #d80b0b;
+    border-radius: 50%;
+    font-weight: 600;
+    padding: 0px;
+}

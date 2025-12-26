@@ -1,0 +1,334 @@
+.header-div-ac {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+
+.body-div-ac {
+    height: calc(100% - 72px);
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.setheight-acst {
+    height: 82px;
+}
+
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.checkbox-wrapper-7 .tgl {
+    display: none;
+}
+
+.checkbox-wrapper-7 .tgl,
+.checkbox-wrapper-7 .tgl:after,
+.checkbox-wrapper-7 .tgl:before,
+.checkbox-wrapper-7 .tgl *,
+.checkbox-wrapper-7 .tgl *:after,
+.checkbox-wrapper-7 .tgl *:before,
+.checkbox-wrapper-7 .tgl+.tgl-btn {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-7 .tgl::-moz-selection,
+.checkbox-wrapper-7 .tgl:after::-moz-selection,
+.checkbox-wrapper-7 .tgl:before::-moz-selection,
+.checkbox-wrapper-7 .tgl *::-moz-selection,
+.checkbox-wrapper-7 .tgl *:after::-moz-selection,
+.checkbox-wrapper-7 .tgl *:before::-moz-selection,
+.checkbox-wrapper-7 .tgl+.tgl-btn::-moz-selection,
+.checkbox-wrapper-7 .tgl::selection,
+.checkbox-wrapper-7 .tgl:after::selection,
+.checkbox-wrapper-7 .tgl:before::selection,
+.checkbox-wrapper-7 .tgl *::selection,
+.checkbox-wrapper-7 .tgl *:after::selection,
+.checkbox-wrapper-7 .tgl *:before::selection,
+.checkbox-wrapper-7 .tgl+.tgl-btn::selection {
+    background: none;
+}
+
+.checkbox-wrapper-7 .tgl+.tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-wrapper-7 .tgl+.tgl-btn:after,
+.checkbox-wrapper-7 .tgl+.tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "GST";
+    padding: 2px 5px;
+    border: 1px solid #05823a;
+    width: 72%;
+    height: 100%;
+}
+
+.checkbox-wrapper-7 .tgl+.tgl-btn:after {
+    left: 0;
+}
+
+.checkbox-wrapper-7 .tgl+.tgl-btn:before {
+    display: none;
+}
+
+.checkbox-wrapper-7 .tgl:checked+.tgl-btn:after {
+    left: 30%;
+}
+
+.checkbox-wrapper-7 .tgl-ios+.tgl-btn {
+    background: #e82e2e;
+    box-shadow: inset 0px 0px 8px -1px #012f01;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+}
+
+.checkbox-wrapper-7 .tgl-ios+.tgl-btn:after {
+    border-radius: 2em;
+    background: #ffffff;
+    font-weight: 700;
+    color: #10773b;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.checkbox-wrapper-7 .tgl-ios+.tgl-btn:hover:after {
+    will-change: padding;
+}
+
+.checkbox-wrapper-7 .tgl-ios+.tgl-btn:active {
+    box-shadow: inset 0 0 0 2em #e8eae9;
+}
+
+.checkbox-wrapper-7 .tgl-ios+.tgl-btn:active:after {
+    padding-right: 0.8em;
+}
+
+.checkbox-wrapper-7 .tgl-ios:checked+.tgl-btn {
+    background: #05823a;
+}
+
+.checkbox-wrapper-7 .tgl-ios:checked+.tgl-btn:active {
+    box-shadow: none;
+}
+
+.checkbox-wrapper-7 .tgl-ios:checked+.tgl-btn:active:after {
+    margin-left: -0.8em;
+}
+
+.bodyhead-ac {
+    background: white;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    padding: 8px;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center
+}
+
+.bodyhead-div-ac {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 175px;
+}
+
+.db-ac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-common-ac {
+    border-radius: 5px;
+    height: calc(100% - 190px) !important;
+    box-shadow: 0px 0px 4px -2px green;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.accountpp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.accountpp-modal-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.accountpp-modal-othercontainer {
+    background: white;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 50%;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.accountpp-close-btn {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.date-filter-popup-st {
+    left: 0px !important;
+}
+
+.adminsale-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.adminsale-modal-box {
+    background: #fff;
+    width: 98%;
+    max-width: 490px;
+    max-height: 85%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+.adminsale-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    height: 50px;
+}
+
+.adminsale-modal-body {
+    height: calc(100% - 50px);
+    overflow: auto;
+    padding: 18px;
+}
+
+.adminsale-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 28px;
+}
+
+.adminsale-modal-section {
+    margin-bottom: 16px;
+}
+
+.adminsale-modal-section h4 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+.adminsale-modal-section p {
+    margin: 4px 0;
+}
+
+.inner-adjustacst {
+    width: fit-content;
+}
+
+.expenses-container {
+    width: 280px;
+    /* adjust as needed */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.expense-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.h-px-102 {
+    height: 102px !important;
+}
+
+.min-wdset-gst {
+    min-width: 182px;
+}
+
+.common-gst-input {
+    width: 100%;
+    padding: 0px;
+    gap: 18px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.common-gst-add {
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+}
+
+.common-gst-add-st {
+    border-right: 0px !important;
+    width: 18px !important;
+    border-left: 0px !important;
+    border-radius: 0px !important;
+}
+
+.svg-class-gst {
+    position: relative;
+    bottom: 2px;
+}

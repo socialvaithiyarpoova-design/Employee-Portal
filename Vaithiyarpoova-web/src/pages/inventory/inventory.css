@@ -1,0 +1,173 @@
+.inventory-export-btn{
+    background: transparent !important;
+    border: #18934B solid 1px;
+    outline: none;
+    color: #18934B;
+    border-radius: 6px;
+    padding: 7px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.inventory-export-btn:hover,
+.inventory-export-btn.active {
+  background: linear-gradient(3deg, #0B622F, #18934B) !important;
+  color: #ffffff;
+  box-shadow: none !important;
+}
+.tbody-row-inventry{
+ height: 60px;
+}
+.inventry-modal-view {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    animation: zoomIn 0.5s forwards;
+    transform-origin: center;
+}
+
+.inventry-modal-view.zoom-out {
+    animation: zoomOut 0.5s forwards;
+}
+.inventry-modal-header {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+.inventry-view-header{
+  color: #121212; 
+  font-weight: 500;
+}
+.inventry-body-header-txt{
+    color: #121212; 
+  font-weight: 500;
+   margin-bottom: 0px;
+}
+.inventry-body-p-txt{
+    color: #404040; 
+  font-weight: 500; 
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; 
+  max-width: 100%;
+}
+.iventry-form-controle{
+    padding: 8px;
+    border: 1px solid #dddcdc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    outline: none;
+}
+.iventry-form-controle:focus{
+   border-color: #18934B;
+}
+.iventry-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.selected-li {
+  background: linear-gradient(3deg, #0B622F, #18934b);
+  color: white;
+}
+
+.inventry-update-btn{
+  background: linear-gradient(3deg, #0B622F, #18934B) !important;
+  border: none !important;
+  outline: none;
+  color: #ffffff;
+  border-radius: 6px;
+  max-width: 100px;
+  font-weight: 500;
+  width: 100%;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.hr-iventory{
+    border-bottom: #0B622F solid 0.5px;
+    width: 80%;
+}
+
+.tb-body-iventory-st {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picker-popover-export {
+  position: absolute;
+  z-index: 1055;
+  border-radius:  20px !important;
+}
+.lead-pill-export {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: 500;
+  width: 100%;
+  outline: none;
+  color: #121212;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.inventry-modal-export{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 373px;
+    animation: zoomIn 0.5s forwards;
+    transform-origin: center;
+}
+
+.inventry-modal-view.export {
+    animation: zoomOut 0.5s forwards;
+}
+
+.rdrDaySelected, 
+.rdrInRange, 
+.rdrStartEdge, 
+.rdrEndEdge {
+  background-color: #18934B!important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.rdrDayNumber span {
+  background: none !important;
+  color: #000 ;
+}
+
+.rdrDaySelected, 
+.rdrStartEdge, 
+.rdrEndEdge {
+  background-color: #18934B !important;
+  color: white !important;
+   border: 1px solid #18934B!important;
+}
+
+.rdrDayNumber span::after {
+  background:#18934B !important;
+  color: white !important;
+}
+
+.rdrDateInput {
+  border: none !important; 
+    color: #000 !important;
+}
+
+.rdrDateInput input:focus {
+  border: 1px solid #18934B !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.rdrDateInput input:focus-visible {
+  outline: none !important;
+}

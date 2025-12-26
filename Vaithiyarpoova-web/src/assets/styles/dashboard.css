@@ -1,0 +1,118 @@
+.header-container-db {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 22px;
+}
+
+.body-container-db {
+    height: calc(100% - 112px);
+    padding: 0px 22px;
+    overflow: auto;
+}
+
+.welcome-st {
+    font-weight: 800;
+    color: #121212;
+}
+
+.container-db {
+    height: 100%;
+    width: 100%;
+}
+
+.db-cards-st {
+    gap: 22px 0px;
+    padding: 18px 0px 36px 0px;
+    margin-left: calc(-.0 * var(--bs-gutter-x)) !important;
+}
+
+.card-bgimg {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.bg-light-db {
+    background-color: RGB(252 253 253) !important;
+}
+
+.pookie-band {
+    position: absolute;
+    bottom: 10px;
+    right: -40px;
+    background-color: #007bff;
+    /* Bootstrap primary */
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    z-index: 1001;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.ribbon {
+    width: 154px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -2px;
+    right: 10px;
+    z-index: 1002;
+    border-radius: 18px;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 165px;
+    height: 65px;
+    padding: 5px 0;
+    background: linear-gradient(3deg, #0B622F, #18934b);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-45deg);
+    box-shadow: 0px -6px 4px -4px #003d1a;
+    bottom: -42px;
+    right: -62px;
+}
+
+
+.dbcard-bg {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: text;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0px 2px 7px -4px #147b3e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.dbcard-bg:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.countst-db {
+    z-index: 1000;
+    position: absolute;
+    top: 38%;
+    right: 15%;
+    margin-top: 12px;
+    background: #fff;
+}
+
+.db-cardhead-st {
+    z-index: 1000;
+    background: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

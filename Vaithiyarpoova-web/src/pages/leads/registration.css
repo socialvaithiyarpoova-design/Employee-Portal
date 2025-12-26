@@ -1,0 +1,68 @@
+/* Dropdown wrapper */
+.reg-class-dropdown {
+  position: relative;
+  width: 100%;
+}
+.reg-class-selected.disabled {
+  background-color: #f8f9fa;
+  color: #999;
+  cursor: not-allowed;
+  border: 1px solid #ddd;
+}
+
+.reg-class-option:hover {
+  background-color: #15773e81;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Display box */
+.reg-class-selected {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #fff;
+  cursor: pointer;
+  width: 200px;
+  color: #27292b;
+  font-size: 14px;
+}
+
+/* Dropdown menu */
+.reg-class-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+}
+
+/* Each option */
+.reg-class-option {
+  padding: 9px 12px;
+  cursor: pointer;
+  width: 200px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.reg-class-option.selected {
+background: linear-gradient(3deg, #0B622F, #18934b) !important;
+  color: white;
+  font-weight: 600;
+}
+
+.reg-class-option.disabled {
+  color: #999;
+  cursor: not-allowed;
+  background: #f8f9fa;
+}

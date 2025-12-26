@@ -1,0 +1,43 @@
+
+
+.stock-body-container-products {
+  height: calc(100% - 70px);
+  padding: 0px 0px;
+}
+
+.stocks-add-btn{
+    background: transparent;
+    border: 1px solid #18934B;
+    outline: none;
+    color: #05823a;
+    border-radius: 6px;
+    padding: 7px 25px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.stocks-add-btn:hover,.stocks-add-btn.active{
+  background: linear-gradient(3deg, #0B622F, #18934B) !important;
+  color:#fff !important;
+  border-color:#18934B !important;
+  box-shadow: none !important;
+}
+
+/* Filter button base/active styling */
+.product-filter-btns{
+  background: transparent;
+  border: 1px solid #18934B;
+  color: #05823a;
+  border-radius: 6px;
+  padding: 6px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .3s ease;
+}
+.product-filter-btns:hover,.product-filter-btns.active{
+  background: linear-gradient(3deg, #0B622F, #18934B) !important;
+  color:#fff !important;
+  border-color:#18934B !important;
+}
+.product-filter-btns img{ filter: hue-rotate(60deg); }
+.product-filter-btns.active img{ filter: brightness(0) invert(1); }
